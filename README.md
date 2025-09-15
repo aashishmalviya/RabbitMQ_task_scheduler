@@ -54,3 +54,24 @@ http://localhost:15672
 - Start everything with `docker-compose up`
 - Send additional producer messages with `docker-compose run --rm producer`
 - Consumer output will appear in the terminal
+
+
+## Tech stack
+
+| Layer/Component      | Technology                   | Purpose/Role                                               |
+|----------------------|-----------------------------|------------------------------------------------------------|
+| Application Language | **Python 3.x**              | Writing producer and consumer logic         |
+| Messaging Queue      | **RabbitMQ**                | Task/message queue, delivery, and durability |
+| Python Client        | **Pika**                    | Python library for RabbitMQ communication   |
+| Containerization     | **Docker**                  | Isolating app environments                   |
+| Orchestration        | **Docker Compose**          | Multicontainer service management            |
+| Management UI        | RabbitMQ Management Plugin  | Web UI for monitoring/brokering                     |
+| Operating System     | Slim Debian (Docker Image)  | Lightweight OS for containers                       |
+| Queue Persistence    | RabbitMQ durable queues     | Reliable storage of messages/tasks                  |
+
+This stack enables robust, isolated, and scalable Python-based messaging using RabbitMQ, fully managed via Docker Compose for simplicity and portability.
+
+<br>
+<p align="center">
+  Like it? ❤️ <a href="https://linkedin.com/in/aashish-malviya">Let's connect 🤗</a>
+</p>
